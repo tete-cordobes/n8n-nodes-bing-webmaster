@@ -1,0 +1,67 @@
+{
+  "name": "n8n-nodes-bing-webmaster",
+  "version": "1.0.0",
+  "description": "n8n nodes for Bing Webmaster Tools API - SEO monitoring, backlinks, keywords, and rankings analysis",
+  "keywords": [
+    "n8n",
+    "n8n-community-node-package",
+    "bing",
+    "webmaster",
+    "seo",
+    "backlinks",
+    "keywords",
+    "rankings"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tete-cordobes/n8n-nodes-bing-webmaster",
+  "author": {
+    "name": "tete-cordobes",
+    "email": "tete-cordobes@users.noreply.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tete-cordobes/n8n-nodes-bing-webmaster.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials --ext .ts",
+    "lintfix": "eslint nodes credentials --ext .ts --fix",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/BingWebmasterApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/BingWebmaster/BingWebmaster.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-n8n-nodes-base": "^1.11.0",
+    "gulp": "^4.0.2",
+    "jest": "^29.5.0",
+    "n8n-workflow": "^1.0.0",
+    "prettier": "^2.8.7",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="bingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0C8484"/>
+      <stop offset="100%" style="stop-color:#00A4EF"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bingGradient)" d="M9 4v32.5l7.5 4.5 16-9.5v-6L18 31.5V11l-9-4z"/>
+  <path fill="#00A4EF" d="M18 11l14.5 5v15.5l-14 8.5-7.5-4.5V39l7.5 5 22-13V14z"/>
+</svg>
